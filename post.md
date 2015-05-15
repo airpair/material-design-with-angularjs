@@ -64,7 +64,7 @@ In addition, I was keen to:
 Given these requirements, this is how the **index.html** file came out:
 
 **Boilerplate stuff to include the CSS**
-```javascript,linenum=true
+```markup,linenum=true
 <!DOCTYPE html>
 <html lang="en">
 
@@ -79,7 +79,7 @@ Given these requirements, this is how the **index.html** file came out:
 ```
 
 **The toolbar on top**
-```javascript,linenum=true
+```markup,linenum=true
     <!-- The top toolbar -->
     <md-toolbar>
       <div class="md-toolbar-tools">
@@ -100,7 +100,7 @@ The only catch with this is that the installation is 57 MB of icons!
 
 The next step was the **Origin city text field, with autocomplete & tooltip**:
 
-```javascript,linenum=true
+```markup,linenum=true
 <!-- The content area -->
     <div layout="row">
       <!-- 20% padding to the left -->
@@ -133,7 +133,7 @@ The next step was the **Origin city text field, with autocomplete & tooltip**:
 This was a little complicated, and it requires corresponding code in the JavaScript app.js (further below), but with careful reading of the documentation & code you should be able to figure it out. 
 
 The next was fields to **pick up the budget & the dates, and the submit button**, the directive for date input is styled nicely:
-```javascript,linenum=true
+```markup,linenum=true
 </md-content>
           <!-- The row for the budget and dates -->
           <div layout>
@@ -161,7 +161,7 @@ The next was fields to **pick up the budget & the dates, and the submit button**
 ```
 
 And then the last bit, **displaying the results**:
-```javascript,linenum=true
+```markup,linenum=true
   <!-- The results -->
           <md-content ng-show="fareinfo">
             <md-list>
